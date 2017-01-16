@@ -1,4 +1,4 @@
-$('li').click(function(){
+$('ul').on("click","li",function(){
   console.log("toggle class");
   $(this).toggleClass("complete");
 });
@@ -11,7 +11,7 @@ $('#enter').click(function(){
 
 
 
-$('h2').dblclick(function(){
+$('ul').on("dblclick","li",function(){
   console.log("remove object");
   $(this).remove();
 })
